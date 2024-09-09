@@ -13,3 +13,7 @@
 
 ## Propose a Feature
 Since I feel that I have already spent enough life time and brain-rot on time sheets: Feel free to propose a feature or improvement by creating an issue in the [Issues](/issues) section. 
+
+## Privacy Note
+
+![Privacy Note](privacy.md)
