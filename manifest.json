@@ -12,7 +12,7 @@
     },
     "content_scripts": [
       {
-        "matches": ["https://dand365prod.operations.dynamics.com/*"],
+        "matches": ["https://*.operations.dynamics.com/*"],
         "js": ["content.js"],
         "css": ["styles.css"]
       }
@@ -20,7 +20,7 @@
     "web_accessible_resources": [
       {
         "resources": ["messages.json"],
-        "matches": ["https://dand365prod.operations.dynamics.com/*"]
+        "matches": ["https://*.operations.dynamics.com/*"]
       }
     ]
   }
