@@ -1,0 +1,166 @@
+
+/* General page styling */
+html, body {
+    overscroll-behavior-x: none;
+    background-color: #ff69b4; /* Bright pink background for the entire page */
+    color: #000000; /* Black text for contrast */
+    font-family: 'Comic Sans MS', cursive, sans-serif !important; 
+}
+
+/* Title field styling */
+.titleField {
+    font-family: 'Comic Sans MS', cursive, sans-serif !important; 
+}
+
+/* Apply Comic Sans to all elements */
+* {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+label {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+
+
+/* Styling for the main pane */
+#mainPane {
+    background-color: #ff6347; /* Tomato background color */
+    color: #ffffff;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Navigation bar styling */
+#NavBar {
+    color: #000080; /* Navy text color */
+    border-bottom: 3px solid #ff4500; /* OrangeRed border */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    align-items: center;
+}
+
+/* Dashboard label with emojis */
+#NavBarDashboard_label::after {
+    content: "⏳💁🏽‍♂️🏢💰🤗"; /* Emojis for dashboard label */
+    margin-left: 5px;
+    font-size: xx-large;
+}
+
+/* Active state for datepicker */
+.ui-datepicker .ui-state-active {
+    background-color: #ff4500; /* OrangeRed active state */
+}
+
+/* Navigation bar color styling */
+.navigationBar, .gutterList {
+    background-color: #ff4500 !important; /* OrangeRed background for navigation bar */
+    color: #ffffff !important; /* White text */
+}
+
+.gutterList span::before {
+    color: white !important;
+}
+
+.gutterPane-link[data-dyn-selected=true] {
+    background-color: #1d1d1d !important;
+}
+
+/* Navigation bar hover effect */
+.modulesList>.modulesPane-groupHeading:hover {
+    background-color: #1d1d1d !important; /* Dark background on hover */
+}
+
+/* Pinned elements and symbol button styling */
+.navigationBar-pinnedElement,
+.navigationBar-symbolButton {
+    background-color: #00ffff; /* Cyan background */
+    color: #ff1493; /* Deep pink text */
+}
+
+/* Hover effect for symbol buttons */
+.navigationBar-symbolButton:hover {
+    background-color: #ff4500; /* OrangeRed on hover */
+    color: #ffffff; /* White text */
+}
+
+/* Styling for workspace areas */
+.Workspace {
+    background-color: #7fffd4; /* Aquamarine background */
+    color: #8b0000; /* Dark red text */
+}
+
+/* Form container styling */
+.formContainer {
+    background-color: #32cd32; /* LimeGreen background for form container */
+    color: #ffffff; /* White text */
+    border: 3px solid #ff4500; /* OrangeRed border for emphasis */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Button styling */
+button, .dynamicsButton {
+    background-color: #ff4500; /* OrangeRed background for buttons */
+    color: #ffffff; /* White text */
+    border: 2px solid #00ffff; /* Cyan border */
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Hover effect for buttons */
+button:hover, .dynamicsButton:hover {
+    background-color: #ff6347; /* Tomato on hover */
+    color: #00ff00; /* Bright yellow text */
+}
+
+/* Table styling */
+.table {
+    background-color: #ff69b4; /* Hot pink table background */
+    color: #000000; /* Black text */
+    border-collapse: collapse;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+Table header styling
+.table th {
+    background-color: #00ff00; /* Lime green for headers */
+    color: #0000ff; /* Blue text */
+    padding: 10px;
+    border-bottom: 3px solid #ff4500; /* OrangeRed border */
+}
+
+/* Table data cell styling */
+.table td {
+    padding: 10px;
+    border-bottom: 2px solid #ffff00; /* Yellow border */
+}
+
+/* Hover effect for table rows */
+.table tr:hover {
+    background-color: #ffa500; /* Orange on row hover */
+}
+
+
+/* Input field styling */
+
+input[type="text"], input[type="email"], textarea {
+    background-color: #8a2be2; 
+    border: 2px solid #00ff7f; 
+    color: #1ac200;
+    /* padding: 12px; */
+    font-family: 'Comic Sans MS', cursive, sans-serif !important;
+    width: 100%;
+}
+
+/* Focus effect for input fields */
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border: 2px solid #ff4500; /* OrangeRed border on focus */
+    outline: none;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #ff1493; /* Deep pink background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
