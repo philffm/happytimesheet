@@ -190,9 +190,6 @@
 
 
 
-            
-
-
             // Inject both the affirmation and the quote
             injectAffirmation();
             injectQuote();

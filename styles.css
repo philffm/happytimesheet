@@ -70,11 +70,11 @@ label {
 }
 
 /* Pinned elements and symbol button styling */
-.navigationBar-pinnedElement,
+/* .navigationBar-pinnedElement,
 .navigationBar-symbolButton {
-    background-color: #00ffff; /* Cyan background */
-    color: #ff1493; /* Deep pink text */
-}
+    background-color: #00ffff; 
+color: #ff1493 !important;
+} */
 
 /* Hover effect for symbol buttons */
 .navigationBar-symbolButton:hover {
