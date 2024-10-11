@@ -6,7 +6,10 @@
     "Value isn't in digits; it's in you! 💫",
     "You’re worth more than you measure! 🚀",
     "Beyond the count, you're unique! 🌈",
-    "You are greater than goals! 🎯"
+    "You are greater than goals! 🎯",
+    "You don’t fit in a spreadsheet, you break the mold! 💥",
+    "You're not bound by the clock—you're timeless! ⏳",
+    "You’re here to innovate, not just meet KPIs! 🚀"
   ],
   "quotes": {
     "monday": [
@@ -14,16 +17,15 @@
       "The art of starting is knowing it’s never too late. ⏰",
       "Monday: A canvas for fresh ideas. 💡",
       "Every Monday is a new story waiting to be written. 📖",
-      "Design your day with intention, and the rest will follow. 🧭",
+      "Design your Monday with intention, and the rest will follow. 🧭",
       "Monday is the day dreams take their first step. 🚀"
     ],
     "tuesday": [
       "The road of creativity is long; enjoy every turn. 🛤️",
       "Every Tuesday is a small chance to refine your vision. 👓",
-      "Build bridges of ideas, one step at a time. 🌉",
       "Tuesday: A whisper of progress in the journey. 🚶‍♂️",
-      "Remember, even the smallest change can spark a revolution. 🔥",
-      "Find the poetry in pixels today. 🖌️"
+      "Tuesday is just Monday in disguise, but don't worry—you're still winning. 😎",
+      "Growth happens in small steps, not giant leaps. Embrace the process. 🌱"
     ],
     "wednesday": [
       "In the middle of the week, find the middle of yourself. 🧘‍♂️",
@@ -46,24 +48,21 @@
       "Friday: A day to ponder what’s next. 🤔",
       "Design is a dance between freedom and constraints. 💃🕺",
       "Endings are beginnings wrapped in experience. 🔄",
-      "The weekend approaches; let your mind wander free. 🕊️",
-      "Friday is a threshold; step boldly into the unknown. 🚪"
-    ],
+      "Approach the weekend like a Stoic: Reflect, recalibrate, then release. 🍃"
+      ],
     "saturday": [
       "Embrace the blank page of a Saturday. 📝",
       "Rest is part of the creative process. Breathe deeply today. 🌬️",
-      "Saturday: The universe gives you space to dream. 🌌",
       "Take time to explore the unseen corners of your imagination. 🔍",
       "On Saturdays, we learn to listen to our inner voice. 🗣️",
-      "Seek not just to create, but to connect deeply. ❤️"
+      "Do less, feel more. The best ideas come from moments of stillness. 🌊",
+      "Your weekend is your art—craft it mindfully. 🎨"
     ],
     "sunday": [
-      "Sundays are pauses in the rhythm of creation. ⏳",
-      "Reflect on your week like an artist reflects on their canvas. 🖼️",
-      "Sunday: A quiet moment for your soul to catch up. 🕊️",
-      "Dream boldly today; tomorrow, create with intention. ✍️",
-      "Sundays remind us that rest is a sacred part of growth. 🌱",
-      "Look within today to shape what comes tomorrow. 🔮"
+      "What are you doing here? Go out, enjoy life! 😊",
+      "Sundays aren't for screens, they're for sun! 🌄",
+      "Go on, the world is waiting. No more scrolling! 🌍",
+      "Sundays are for life, not lists. See you out there! ✌️"
     ]
   }
 }
