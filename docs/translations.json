@@ -1,0 +1,36 @@
+{
+    "en": {
+        "title": "Happy Timesheet - Spice Up Your Dynamics 365 Experience",
+        "about": "About Happy Timesheet",
+        "aboutText": "Happy Timesheet is designed to bring a positive and colorful twist to the timesheet experience in Microsoft Dynamics 365. It replaces common hostile terms with friendlier alternatives, injects motivational quotes and affirmations, and enhances the user interface with dynamic animations and colors.",
+        "features": "Features",
+        "featureList": [
+            "Friendly Language: Replaces terms like 'Resource' and 'Project ID' with more pleasant alternatives like 'Team Member' and 'Mission ID'.",
+            "Daily Affirmations: Displays random affirmations in the 'Total Hours' field to uplift users and emphasize their value beyond numbers.",
+            "Motivational Quotes: Injects daily quotes into the header to keep users motivated and inspired.",
+            "Dynamic Animations: Adds subtle animations and color effects to enhance the user interface and improve the overall user experience."
+        ],
+        "proposeFeature": "Propose a Feature",
+        "proposeFeatureText": "Feel free to propose a feature or improvement by creating an issue in the Issues section.",
+        "privacyNote": "Privacy Note",
+        "privacyNoteText": "Happy Timesheet operates entirely on your local machine (client-side). All changes to the appearance, language, and user interface are performed locally in your browser. No data is transmitted to any external servers or third parties.",
+        "funMessage": "Make your timesheet experience delightful with Happy Timesheet. Microsoft, if you're reading this, hire me to make your products as fun as this extension!"
+    },
+    "es": {
+        "title": "Happy Timesheet - Mejora tu experiencia en Dynamics 365",
+        "about": "Acerca de Happy Timesheet",
+        "aboutText": "Happy Timesheet está diseñado para aportar un giro positivo y colorido a la experiencia de las hojas de tiempo en Microsoft Dynamics 365. Reemplaza términos hostiles comunes con alternativas más amigables, inyecta citas motivacionales y afirmaciones, y mejora la interfaz de usuario con animaciones y colores dinámicos.",
+        "features": "Características",
+        "featureList": [
+            "Lenguaje Amigable: Reemplaza términos como 'Recurso' y 'ID de Proyecto' con alternativas más agradables como 'Miembro del Equipo' y 'ID de Misión'.",
+            "Afirmaciones Diarias: Muestra afirmaciones aleatorias en el campo 'Horas Totales' para elevar a los usuarios y enfatizar su valor más allá de los números.",
+            "Citas Motivacionales: Inyecta citas diarias en el encabezado para mantener a los usuarios motivados e inspirados.",
+            "Animaciones Dinámicas: Agrega animaciones sutiles y efectos de color para mejorar la interfaz de usuario y la experiencia general del usuario."
+        ],
+        "proposeFeature": "Proponer una Característica",
+        "proposeFeatureText": "Siéntase libre de proponer una característica o mejora creando un problema en la sección de Issues.",
+        "privacyNote": "Nota de Privacidad",
+        "privacyNoteText": "Happy Timesheet opera completamente en su máquina local (lado del cliente). Todos los cambios en la apariencia, el lenguaje y la interfaz de usuario se realizan localmente en su navegador. No se transmite ningún dato a servidores externos o terceros.",
+        "funMessage": "Haz que tu experiencia con las hojas de tiempo sea encantadora con Happy Timesheet. Microsoft, si estás leyendo esto, ¡contrátame para hacer que tus productos sean tan divertidos como esta extensión!"
+    }
+    // add french, german and italian 
