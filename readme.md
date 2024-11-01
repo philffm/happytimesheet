@@ -1,5 +1,5 @@
 <!-- logo from icons/icon48.png -->
-# ![Happy Timesheet](icons/icon48.png) Happy Timesheet - Spiced Up Time Tracking in Dynamics 365
+# ![Happy Timesheet](docs/logo.png) Happy Timesheet - Spiced Up Time Tracking in Dynamics 365
 
 **Happy Timesheet** is a Chrome extension designed to bring a positive and colorful twist to the timesheet experience in Microsoft Dynamics 365. It replaces common hostile terms with friendlier alternatives, injects motivational quotes and affirmations, and enhances the user interface with dynamic animations and colors.
 
