@@ -61,3 +61,31 @@ a:hover {
         background-position: 0% 50%;
     }
 }
+
+.language-buttons button {
+    background-color: #ff4500;
+    /* Bright orange background */
+    color: #ffffff;
+    /* White text */
+    border: 2px solid #ff6347;
+    /* Tomato border */
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 5px;
+}
+
+.language-buttons button:hover {
+    background-color: #ff6347;
+    /* Tomato background on hover */
+    transform: scale(1.1);
+    /* Slightly enlarge the button */
+}
+
+.language-buttons button:active {
+    transform: scale(0.95);
+    /* Slightly shrink the button on click */
+}
