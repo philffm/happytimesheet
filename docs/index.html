@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Timesheet</title>
-    <meta name="description" content="Happy Timesheet is a Chrome extension that enhances your Dynamics 365 experience with friendly language, motivational quotes, and dynamic animations.">
+    <title id="metaTitle">Happy Timesheet</title>
+    <meta id="metaDescription" name="description" content="Happy Timesheet enhances your Dynamics 365 experience.">
     <meta name="keywords" content="Happy Timesheet, Dynamics 365, Chrome extension, motivational quotes, UI enhancements">
     <meta name="author" content="Phil Wornath">
     <link rel="stylesheet" href="style.css">
@@ -19,24 +19,28 @@
     <link rel="alternate" hreflang="ja" href="https://philffm.github.io/happytimesheet/?lang=ja">
     <script>
         async function loadContent(lang = 'en') {
-            const response = await fetch('translations.json');
-            const translations = await response.json();
+                const response = await fetch('translations.json');
+                const translations = await response.json();
 
-            // Get the translation data for the selected language
-            const data = translations[lang] || translations['en'];
+                // Wähle die Übersetzungsdaten für die ausgewählte Sprache aus
+                const data = translations[lang] || translations['en'];
 
-            // Replace placeholders with translation data
-            document.getElementById('title').textContent = data.title;
-            document.getElementById('about').textContent = data.about;
-            document.getElementById('aboutText').textContent = data.aboutText;
-            document.getElementById('features').textContent = data.features;
-            document.getElementById('featureList').innerHTML = data.featureList.map(item => `<li>${item}</li>`).join('');
-            document.getElementById('proposeFeature').textContent = data.proposeFeature;
-            document.getElementById('proposeFeatureText').textContent = data.proposeFeatureText;
-            document.getElementById('privacyNote').textContent = data.privacyNote;
-            document.getElementById('privacyNoteText').textContent = data.privacyNoteText;
-            document.getElementById('funMessage').textContent = data.funMessage;
-        }
+                // Ersetze die Meta-Tags
+                document.getElementById('metaTitle').textContent = data.title;
+                document.getElementById('metaDescription').setAttribute('content', data.aboutText);
+
+                // Aktualisiere die anderen Inhalte
+                document.getElementById('title').textContent = data.title;
+                document.getElementById('about').textContent = data.about;
+                document.getElementById('aboutText').textContent = data.aboutText;
+                document.getElementById('features').textContent = data.features;
+                document.getElementById('featureList').innerHTML = data.featureList.map(item => `<li>${item}</li>`).join('');
+                document.getElementById('proposeFeature').textContent = data.proposeFeature;
+                document.getElementById('proposeFeatureText').textContent = data.proposeFeatureText;
+                document.getElementById('privacyNote').textContent = data.privacyNote;
+                document.getElementById('privacyNoteText').textContent = data.privacyNoteText;
+                document.getElementById('funMessage').textContent = data.funMessage;
+            }
 
         function changeLanguage(lang) {
             loadContent(lang);
