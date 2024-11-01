@@ -4,6 +4,8 @@ body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     text-align: center;
     padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 h1,
@@ -88,4 +90,38 @@ a:hover {
 .language-buttons button:active {
     transform: scale(0.95);
     /* Slightly shrink the button on click */
+}
+
+.win98-buttons {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.win98-button {
+    background-color: #c0c0c0;
+    /* Light gray background */
+    color: #000000;
+    /* Black text */
+    border: 2px solid #808080;
+    /* Dark gray border */
+    border-top-color: #ffffff;
+    /* White top border for 3D effect */
+    border-left-color: #ffffff;
+    /* White left border for 3D effect */
+    padding: 5px 15px;
+    font-family: 'Tahoma', sans-serif;
+    /* Windows 98 font style */
+    font-size: 1em;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 1px 1px 0 #808080;
+    /* Shadow for 3D effect */
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.win98-button:active {
+    background-color: #a0a0a0;
+    /* Darker gray on click */
+    box-shadow: inset 1px 1px 0 #808080;
+    /* Inset shadow for pressed effect */
 }
