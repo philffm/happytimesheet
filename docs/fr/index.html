@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Timesheet</title>
+    <meta name="description" content="Happy Timesheet is a Chrome extension that enhances your Dynamics 365 experience with friendly language, motivational quotes, and dynamic animations.">
+    <meta name="keywords" content="Happy Timesheet, Dynamics 365, Chrome extension, motivational quotes, UI enhancements">
+    <meta name="author" content="Phil Wornath">
+    <link rel="canonical" href="https://philffm.github.io/happytimesheet/">
+    <script>
+        // Supported languages
+        const supportedLanguages = ['en', 'es', 'de', 'fr', 'it', 'pt', 'nl', 'ja'];
+
+        // Get the browser's language
+        const browserLanguage = navigator.language.slice(0, 2);
+
+        // Determine the language to redirect to
+        const languageToUse = supportedLanguages.includes(browserLanguage) ? browserLanguage : 'en';
+
+        // Redirect to the appropriate language page
+        window.location.href = `./${languageToUse}/index.html`;
+    </script>
+</head>
+<body>
+    <p>Redirecting to your language version...</p>
+</body>
+</html>
