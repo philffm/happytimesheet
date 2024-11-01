@@ -35,6 +35,21 @@
         a:hover {
             color: #ff6347;
         }
+        .language-buttons {
+            margin: 20px 0;
+        }
+        .language-button {
+            background-color: #32cd32;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .language-button:hover {
+            background-color: #ff4500;
+        }
     </style>
 </head>
 <body>
@@ -44,6 +59,17 @@
         <p id="aboutText"></p>
         <a href="https://chromewebstore.google.com/detail/happy-timesheet-spice-up/hhkmoomchoaiiejpifbldkecemonncop?hl=en">Get it on Chrome Web Store</a>
     </header>
+
+    <div class="language-buttons">
+        <button class="language-button" onclick="loadTranslations('en')">🇬🇧 English</button>
+        <button class="language-button" onclick="loadTranslations('es')">🇪🇸 Español</button>
+        <button class="language-button" onclick="loadTranslations('de')">🇩🇪 Deutsch</button>
+        <button class="language-button" onclick="loadTranslations('fr')">🇫🇷 Français</button>
+        <button class="language-button" onclick="loadTranslations('it')">🇮🇹 Italiano</button>
+        <button class="language-button" onclick="loadTranslations('pt')">🇵🇹 Português</button>
+        <button class="language-button" onclick="loadTranslations('nl')">🇳🇱 Nederlands</button>
+        <button class="language-button" onclick="loadTranslations('ja')">🇯🇵 日本語</button>
+    </div>
 
     <main>
         <section>
