@@ -1,79 +1,86 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Timesheet - Mejora tu experiencia en Dynamics 365</title>
-    <meta name="description" content="Happy Timesheet está diseñado para aportar un giro positivo y colorido a la experiencia de las hojas de tiempo en Microsoft Dynamics 365. Reemplaza términos hostiles comunes con alternativas más amigables, inyecta citas motivacionales y afirmaciones, y mejora la interfaz de usuario con animaciones y colores dinámicos.">
+    <title>Happy Timesheet</title>
+    <meta name="description" content="Happy Timesheet is a Chrome extension that enhances your Dynamics 365 experience with friendly language, motivational quotes, and dynamic animations.">
     <meta name="keywords" content="Happy Timesheet, Dynamics 365, Chrome extension, motivational quotes, UI enhancements">
     <meta name="author" content="Phil Wornath">
-    <link rel="canonical" href="https://philffm.github.io/happytimesheet/es/">
-    <style>
-        body {
-            background-color: #ff69b4;
-            color: #000000;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            text-align: center;
-            padding: 20px;
+    <link rel="stylesheet" href="../style.css">
+    <link rel="canonical" href="https://philffm.github.io/happytimesheet/">
+    <link rel="alternate" hreflang="en" href="https://philffm.github.io/happytimesheet/en/">
+    <link rel="alternate" hreflang="es" href="https://philffm.github.io/happytimesheet/es/">
+    <link rel="alternate" hreflang="de" href="https://philffm.github.io/happytimesheet/de/">
+    <link rel="alternate" hreflang="fr" href="https://philffm.github.io/happytimesheet/fr/">
+    <link rel="alternate" hreflang="it" href="https://philffm.github.io/happytimesheet/it/">
+    <link rel="alternate" hreflang="pt" href="https://philffm.github.io/happytimesheet/pt/">
+    <link rel="alternate" hreflang="nl" href="https://philffm.github.io/happytimesheet/nl/">
+    <link rel="alternate" hreflang="ja" href="https://philffm.github.io/happytimesheet/jp/">
+    <script>
+        async function loadContent() {
+            const response = await fetch("../translations.json");
+            const translations = await response.json();
+
+            // Get the language from the URL or default to "en"
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get("lang") || "en";
+
+            // Get the translation data for the selected language
+            const data = translations[lang] || translations["en"];
+
+            // Replace placeholders with translation data
+            document.getElementById("title").textContent = data.title;
+            document.getElementById("about").textContent = data.about;
+            document.getElementById("aboutText").textContent = data.aboutText;
+            document.getElementById("features").textContent = data.features;
+            document.getElementById("featureList").innerHTML = data.featureList.map(item => `<li>${item}</li>`).join("");
+            document.getElementById("proposeFeature").textContent = data.proposeFeature;
+            document.getElementById("proposeFeatureText").textContent = data.proposeFeatureText;
+            document.getElementById("privacyNote").textContent = data.privacyNote;
+            document.getElementById("privacyNoteText").textContent = data.privacyNoteText;
+            document.getElementById("funMessage").textContent = data.funMessage;
         }
-        h1, h2 {
-            color: #ff4500;
-        }
-        .language-section {
-            margin: 20px 0;
-            padding: 20px;
-            border: 3px solid #ff4500;
-            background-color: #32cd32;
-            color: #ffffff;
-        }
-        a {
-            color: #0000ff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            color: #ff6347;
-        }
-    </style>
+
+        window.onload = loadContent;
+    </script>
 </head>
 <body>
     <header>
         <img src="../logo.png" alt="Happy Timesheet Icon">
-        <h1>Happy Timesheet - Mejora tu experiencia en Dynamics 365</h1>
-        <p>Happy Timesheet está diseñado para aportar un giro positivo y colorido a la experiencia de las hojas de tiempo en Microsoft Dynamics 365. Reemplaza términos hostiles comunes con alternativas más amigables, inyecta citas motivacionales y afirmaciones, y mejora la interfaz de usuario con animaciones y colores dinámicos.</p>
-        <a href="https://chromewebstore.google.com/detail/happy-timesheet-spice-up/hhkmoomchoaiiejpifbldkecemonncop?hl=es">Get it on Chrome Web Store</a>
+        <h1 id="title">Happy Timesheet</h1>
+        <p id="aboutText"></p>
+        <a href="https://chromewebstore.google.com/detail/happy-timesheet-spice-up/hhkmoomchoaiiejpifbldkecemonncop?hl=en">Get it on Chrome Web Store</a>
     </header>
 
     <main>
         <section>
-            <h2>Acerca de Happy Timesheet</h2>
-            <p>Happy Timesheet está diseñado para aportar un giro positivo y colorido a la experiencia de las hojas de tiempo en Microsoft Dynamics 365. Reemplaza términos hostiles comunes con alternativas más amigables, inyecta citas motivacionales y afirmaciones, y mejora la interfaz de usuario con animaciones y colores dinámicos.</p>
+            <h2 id="about"></h2>
+            <p id="aboutText"></p>
         </section>
 
         <section>
-            <h2>Características</h2>
-            <ul>
-                <li>Lenguaje Amigable: Reemplaza términos como &apos;Recurso&apos; y &apos;ID de Proyecto&apos; con alternativas más agradables como &apos;Miembro del Equipo&apos; y &apos;ID de Misión&apos;.</li> <li>Afirmaciones Diarias: Muestra afirmaciones aleatorias en el campo &apos;Horas Totales&apos; para elevar a los usuarios y enfatizar su valor más allá de los números.</li> <li>Citas Motivacionales: Inyecta citas diarias en el encabezado para mantener a los usuarios motivados e inspirados.</li> <li>Animaciones Dinámicas: Agrega animaciones sutiles y efectos de color para mejorar la interfaz de usuario y la experiencia general del usuario.</li> 
-            </ul>
+            <h2 id="features"></h2>
+            <ul id="featureList"></ul>
         </section>
 
         <section>
-            <h2>Proponer una Característica</h2>
-            <p>Siéntase libre de proponer una característica o mejora creando un problema en la sección de Issues.</p>
+            <h2 id="proposeFeature"></h2>
+            <p id="proposeFeatureText"></p>
         </section>
 
         <section>
-            <h2>Nota de Privacidad</h2>
-            <p>Happy Timesheet opera completamente en su máquina local (lado del cliente). Todos los cambios en la apariencia, el lenguaje y la interfaz de usuario se realizan localmente en su navegador. No se transmite ningún dato a servidores externos o terceros.</p>
+            <h2 id="privacyNote"></h2>
+            <p id="privacyNoteText"></p>
         </section>
 
         <section class="language-section">
-            <p>Haz que tu experiencia con las hojas de tiempo sea encantadora con Happy Timesheet. Microsoft, si estás leyendo esto, ¡contrátame para hacer que tus productos sean tan divertidos como esta extensión!</p>
+            <p id="funMessage"></p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Phil Wornath. All rights reserved. Visit the project at <a href="https://philffm.github.io/happytimesheet/es/">Happy Timesheet</a>.</p>
+        <p>&copy; 2023 Phil Wornath. All rights reserved. Visit the project at <a href="https://philffm.github.io/happytimesheet/">Happy Timesheet</a>.</p>
     </footer>
 </body>
 </html>
