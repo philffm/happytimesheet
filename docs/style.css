@@ -1,5 +1,11 @@
+html {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    animation: rainbow 5s ease infinite;
+    background-size: 400% 400%;
+
+}
+
 body {
-    background-color: #c0c0c0;
     color: #000000;
     font-family: 'Comic Sans MS', cursive, sans-serif;
     text-align: center;
@@ -90,9 +96,9 @@ a:hover {
     background-color: #c0c0c0;
     border: 2px solid #808080;
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
 }
 
 .language-menu button {
