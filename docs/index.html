@@ -54,61 +54,73 @@
     </script>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Happy Timesheet Icon">
-        <h1 id="title">Happy Timesheet</h1>
-        <p id="aboutText"></p>
-        <a class="chrome-store-button" target="_blank" href="https://chromewebstore.google.com/detail/happy-timesheet-spice-up/hhkmoomchoaiiejpifbldkecemonncop?hl=en">Get it on Chrome Web Store</a>
-    </header>
-
-    <!-- Windows 98 style buttons -->
-    <section class="win98-buttons">
-        <button class="win98-button">OK</button>
-        <button class="win98-button">Cancel</button>
-        <button class="win98-button">Apply</button>
-    </section>
-
-    <section class="language-section">
-        <div class="language-buttons">
-            <button onclick="changeLanguage('en')">🇬🇧 English</button>
-            <button onclick="changeLanguage('es')">🇪🇸 Español</button>
-            <button onclick="changeLanguage('de')">🇩🇪 Deutsch</button>
-            <button onclick="changeLanguage('fr')">🇫🇷 Français</button>
-            <button onclick="changeLanguage('it')">🇮🇹 Italiano</button>
-            <button onclick="changeLanguage('pt')">🇵🇹 Português</button>
-            <button onclick="changeLanguage('nl')">🇳🇱 Nederlands</button>
-            <button onclick="changeLanguage('ja')">🇯🇵 日本語</button>
+    <div class="window-frame">
+        <div class="window-title-bar">
+            <span class="window-title">Happy Timesheet</span>
+            <div class="window-controls">
+                <button class="window-button minimize">_</button>
+                <button class="window-button maximize">□</button>
+                <button class="window-button close">X</button>
+            </div>
         </div>
-    </section>
+        <div class="window-content">
+            <header>
+                <img src="logo.png" alt="Happy Timesheet Icon">
+                <h1 id="title">Happy Timesheet</h1>
+                <p id="aboutText"></p>
+                <a class="chrome-store-button" target="_blank" href="https://chromewebstore.google.com/detail/happy-timesheet-spice-up/hhkmoomchoaiiejpifbldkecemonncop?hl=en">Get it on Chrome Web Store</a>
+            </header>
 
-    <main>
-        <section>
-            <h2 id="about"></h2>
-            <p id="aboutText"></p>
-        </section>
+            <!-- Windows 98 style buttons -->
+            <section class="win98-buttons">
+                <button class="win98-button">OK</button>
+                <button class="win98-button">Cancel</button>
+                <button class="win98-button">Apply</button>
+            </section>
 
-        <section>
-            <h2 id="features"></h2>
-            <ul id="featureList"></ul>
-        </section>
+            <section class="language-section">
+                <div class="language-buttons">
+                    <button onclick="changeLanguage('en')">🇬🇧 English</button>
+                    <button onclick="changeLanguage('es')">🇪🇸 Español</button>
+                    <button onclick="changeLanguage('de')">🇩🇪 Deutsch</button>
+                    <button onclick="changeLanguage('fr')">🇫🇷 Français</button>
+                    <button onclick="changeLanguage('it')">🇮🇹 Italiano</button>
+                    <button onclick="changeLanguage('pt')">🇵🇹 Português</button>
+                    <button onclick="changeLanguage('nl')">🇳🇱 Nederlands</button>
+                    <button onclick="changeLanguage('ja')">🇯🇵 日本語</button>
+                </div>
+            </section>
 
-        <section>
-            <h2 id="proposeFeature"></h2>
-            <p id="proposeFeatureText"></p>
-        </section>
+            <main>
+                <section>
+                    <h2 id="about"></h2>
+                    <p id="aboutText"></p>
+                </section>
 
-        <section>
-            <h2 id="privacyNote"></h2>
-            <p id="privacyNoteText"></p>
-        </section>
+                <section>
+                    <h2 id="features"></h2>
+                    <ul id="featureList"></ul>
+                </section>
 
-        <section>
-            <p id="funMessage"></p>
-        </section>
-    </main>
+                <section>
+                    <h2 id="proposeFeature"></h2>
+                    <p id="proposeFeatureText"></p>
+                </section>
 
-    <footer>
-        <p>&copy; 2024 Phil Wornath. All rights reserved. Visit the project at <a href="https://github.com/philffm/happytimesheet/">Happy Timesheet</a>.</p>
-    </footer>
+                <section>
+                    <h2 id="privacyNote"></h2>
+                    <p id="privacyNoteText"></p>
+                </section>
+
+                <section>
+                    <p id="funMessage"></p>
+                </section>
+            </main>
+
+            <footer>
+                <p>&copy; 2024 Phil Wornath. All rights reserved. Visit the project at <a href="https://github.com/philffm/happytimesheet/">Happy Timesheet</a>.</p>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
