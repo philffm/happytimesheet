@@ -58,8 +58,21 @@
         <img src="logo.png" alt="Happy Timesheet Icon">
         <h1 id="title">Happy Timesheet</h1>
         <p id="aboutText"></p>
-        <a target="_blank" href="https://chromewebstore.google.com/detail/happy-timesheet-spice-up/hhkmoomchoaiiejpifbldkecemonncop?hl=en">Get it on Chrome Web Store</a>
+        <a class="chrome-store-button" target="_blank" href="https://chromewebstore.google.com/detail/happy-timesheet-spice-up/hhkmoomchoaiiejpifbldkecemonncop?hl=en">Get it on Chrome Web Store</a>
     </header>
+
+    <section class="language-section">
+        <div class="language-buttons">
+            <button onclick="changeLanguage('en')">🇬🇧 English</button>
+            <button onclick="changeLanguage('es')">🇪🇸 Español</button>
+            <button onclick="changeLanguage('de')">🇩🇪 Deutsch</button>
+            <button onclick="changeLanguage('fr')">🇫🇷 Français</button>
+            <button onclick="changeLanguage('it')">🇮🇹 Italiano</button>
+            <button onclick="changeLanguage('pt')">🇵🇹 Português</button>
+            <button onclick="changeLanguage('nl')">🇳🇱 Nederlands</button>
+            <button onclick="changeLanguage('ja')">🇯🇵 日本語</button>
+        </div>
+    </section>
 
     <main>
         <section>
@@ -82,19 +95,8 @@
             <p id="privacyNoteText"></p>
         </section>
 
-        <section class="language-section">
+        <section>
             <p id="funMessage"></p>
-            <!-- Language buttons -->
-            <div class="language-buttons">
-                <button onclick="changeLanguage('en')">English</button>
-                <button onclick="changeLanguage('es')">Español</button>
-                <button onclick="changeLanguage('de')">Deutsch</button>
-                <button onclick="changeLanguage('fr')">Français</button>
-                <button onclick="changeLanguage('it')">Italiano</button>
-                <button onclick="changeLanguage('pt')">Português</button>
-                <button onclick="changeLanguage('nl')">Nederlands</button>
-                <button onclick="changeLanguage('ja')">日本語</button>
-            </div>
         </section>
     </main>
 
