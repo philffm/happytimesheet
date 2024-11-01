@@ -9,22 +9,18 @@
     <meta name="author" content="Phil Wornath">
     <link rel="stylesheet" href="style.css">
     <link rel="canonical" href="https://philffm.github.io/happytimesheet/">
-    <link rel="alternate" hreflang="en" href="https://philffm.github.io/happytimesheet/en/">
-    <link rel="alternate" hreflang="es" href="https://philffm.github.io/happytimesheet/es/">
-    <link rel="alternate" hreflang="de" href="https://philffm.github.io/happytimesheet/de/">
-    <link rel="alternate" hreflang="fr" href="https://philffm.github.io/happytimesheet/fr/">
-    <link rel="alternate" hreflang="it" href="https://philffm.github.io/happytimesheet/it/">
-    <link rel="alternate" hreflang="pt" href="https://philffm.github.io/happytimesheet/pt/">
-    <link rel="alternate" hreflang="nl" href="https://philffm.github.io/happytimesheet/nl/">
-    <link rel="alternate" hreflang="ja" href="https://philffm.github.io/happytimesheet/jp/">
+    <link rel="alternate" hreflang="en" href="https://philffm.github.io/happytimesheet/?lang=en">
+    <link rel="alternate" hreflang="es" href="https://philffm.github.io/happytimesheet/?lang=es">
+    <link rel="alternate" hreflang="de" href="https://philffm.github.io/happytimesheet/?lang=de">
+    <link rel="alternate" hreflang="fr" href="https://philffm.github.io/happytimesheet/?lang=fr">
+    <link rel="alternate" hreflang="it" href="https://philffm.github.io/happytimesheet/?lang=it">
+    <link rel="alternate" hreflang="pt" href="https://philffm.github.io/happytimesheet/?lang=pt">
+    <link rel="alternate" hreflang="nl" href="https://philffm.github.io/happytimesheet/?lang=nl">
+    <link rel="alternate" hreflang="ja" href="https://philffm.github.io/happytimesheet/?lang=ja">
     <script>
-        async function loadContent() {
-            const response = await fetch('../translations.json');
+        async function loadContent(lang = 'en') {
+            const response = await fetch('translations.json');
             const translations = await response.json();
-
-            // Get the language from the URL or default to 'en'
-            const urlParams = new URLSearchParams(window.location.search);
-            const lang = urlParams.get('lang') || 'en';
 
             // Get the translation data for the selected language
             const data = translations[lang] || translations['en'];
@@ -42,12 +38,24 @@
             document.getElementById('funMessage').textContent = data.funMessage;
         }
 
-        window.onload = loadContent;
+        function changeLanguage(lang) {
+            loadContent(lang);
+            // Optionally update the URL without reloading the page
+            const url = new URL(window.location);
+            url.searchParams.set('lang', lang);
+            window.history.pushState({}, '', url);
+        }
+
+        window.onload = () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang') || 'en';
+            loadContent(lang);
+        };
     </script>
 </head>
 <body>
     <header>
-        <img src="../logo.png" alt="Happy Timesheet Icon">
+        <img src="logo.png" alt="Happy Timesheet Icon">
         <h1 id="title">Happy Timesheet</h1>
         <p id="aboutText"></p>
         <a target="_blank" href="https://chromewebstore.google.com/detail/happy-timesheet-spice-up/hhkmoomchoaiiejpifbldkecemonncop?hl=en">Get it on Chrome Web Store</a>
@@ -76,6 +84,17 @@
 
         <section class="language-section">
             <p id="funMessage"></p>
+            <!-- Language buttons -->
+            <div class="language-buttons">
+                <button onclick="changeLanguage('en')">English</button>
+                <button onclick="changeLanguage('es')">Español</button>
+                <button onclick="changeLanguage('de')">Deutsch</button>
+                <button onclick="changeLanguage('fr')">Français</button>
+                <button onclick="changeLanguage('it')">Italiano</button>
+                <button onclick="changeLanguage('pt')">Português</button>
+                <button onclick="changeLanguage('nl')">Nederlands</button>
+                <button onclick="changeLanguage('ja')">日本語</button>
+            </div>
         </section>
     </main>
 
