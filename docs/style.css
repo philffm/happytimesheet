@@ -3,6 +3,14 @@ body {
     color: #000000;
     font-family: 'Comic Sans MS', cursive, sans-serif;
     text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 50px auto;
+    border: 2px solid #808080;
+    border-top-color: #ffffff;
+    border-left-color: #ffffff;
+    box-shadow: 4px 4px 0 #808080;
+    position: relative;
 }
 
 h1,
@@ -62,25 +70,27 @@ a:hover {
 }
 
 .language-buttons button {
-    background-color: #ff4500;
-    color: #ffffff;
-    border: 2px solid #ff6347;
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    font-weight: bold;
+    background-color: #c0c0c0;
+    color: #000000;
+    border: 2px solid #808080;
+    border-top-color: #ffffff;
+    border-left-color: #ffffff;
+    padding: 5px 15px;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 1em;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
     margin: 5px;
+    box-shadow: 1px 1px 0 #808080;
+    transition: background-color 0.2s, box-shadow 0.2s;
 }
 
 .language-buttons button:hover {
-    background-color: #ff6347;
-    transform: scale(1.1);
+    background-color: #a0a0a0;
 }
 
 .language-buttons button:active {
-    transform: scale(0.95);
+    background-color: #a0a0a0;
+    box-shadow: inset 1px 1px 0 #808080;
 }
 
 .win98-buttons {
@@ -151,10 +161,17 @@ a:hover {
     font-size: 0.8em;
     text-align: center;
     line-height: 18px;
+    box-shadow: 1px 1px 0 #808080;
+    transition: background-color 0.2s, box-shadow 0.2s;
 }
 
 .window-button:hover {
     background-color: #a0a0a0;
+}
+
+.window-button:active {
+    background-color: #a0a0a0;
+    box-shadow: inset 1px 1px 0 #808080;
 }
 
 .window-content {
